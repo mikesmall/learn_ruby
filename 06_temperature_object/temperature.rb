@@ -15,7 +15,20 @@ class Temperature
     (celsius * 9/5) + 32
   end#to_fahrenheit
 
-end#class Temperature
+end#Temperature
+
+class Celsius < Temperature
+
+  def initialize(c)
+    @c = c
+  end#initialize
+end#Celsius
+
+class Fahrenheit < Temperature
+
+  def initialize(f)
+    @f = f
+end#Temperature 
 
 # Conversion code from previous temperature assignment.
 # Pasted here hoping it can be adapted.
