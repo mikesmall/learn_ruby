@@ -1,14 +1,24 @@
-def echo
+def echo(string)
+  puts string
 end
 
-def shout
+def shout(string)
+  puts string.upcase
 end
 
-def repeat
+def repeat(string, num = 2)
+  puts "#{ string + " " } * num"
 end
 
-def start_of_word
+def start_of_word(string)
+  string.split
+  return string(0)
 end
 
-def titleize
+def first_word(string)
+  return string.split(0)
+end
+
+def titleize(string)
+  return string.split.map(&:capitalize)
 end
