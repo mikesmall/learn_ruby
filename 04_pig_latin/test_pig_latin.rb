@@ -1,5 +1,5 @@
 require './test_helper'
-require 'pig_latin'
+require 'pig_latin.rb'
 # Pig Latin time!
 #
 # Rule 1: If a word begins with a vowel sound, add an "ay" sound to the end of the word.
