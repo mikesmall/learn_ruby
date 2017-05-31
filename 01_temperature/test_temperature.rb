@@ -3,7 +3,7 @@ require './test_helper'
 
 # Again, a file with a specific name needs to be created, in this case "temperature.rb".
 # $ touch temperature.rb
-require 'temperature'
+require 'temperature.rb'
 
 # Now maybe we can talk more about the lines we ignored last problem.
 # The class definition lets us describe that this is a test,
@@ -22,7 +22,7 @@ class TestTemperature < MiniTest::Test
     assert_equal 37, ftoc(98.6)
   end
 
-  def test_ftoc_convers_arbitrary_temperature
+  def test_ftoc_converts_arbitrary_temperature
     assert_equal 20, ftoc(68)
   end
 
@@ -52,3 +52,5 @@ end
 #
 # 1. One degree fahrenheit is 5/9 of one degree celsius
 # 2. The freezing point of water is 0 degrees celsius but 32 degrees fahrenheit
+
+# Temperature converter code from  https://codereview.stackexchange.com/questions/43431/converting-between-fahrenheit-and-celsius
